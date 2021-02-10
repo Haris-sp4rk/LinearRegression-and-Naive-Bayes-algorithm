@@ -86,7 +86,7 @@ void Start_regression(){
     // Regression Variables
     int max_iteration = 1000;
     float learning_rate = 0.1;
-
+    
     // Training
     std::cout << "Making LinearRegressionModel \n";
     LinearRegressionModel linear_reg = LinearRegressionModel(data);

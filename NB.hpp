@@ -22,8 +22,10 @@ void start_Naive_Bayes(){
     std::cout<< "IRIS testing Data Size is ( " << testing_data.size() << " , "  <<testing_data[0].size()<<" )" <<std::endl;
     
     std::cout<< "IRIS training Data Size is ( " << training_data.size() << " , "  <<training_data[0].size()<<" )" <<std::endl;
+    //Training
     naive.fit(training_data);
     
+    //Testing
     std::vector<float> predicitions;
     testing_data = alg_math::vect_Transpose(testing_data); 
     for(int i=0; i<testing_data.size(); i++ )
